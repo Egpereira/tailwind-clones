@@ -1,0 +1,139 @@
+---
+import { Image } from 'astro:assets'
+
+import Metadata from '../layouts/metadata.astro'
+import backgroundImage from '../assets/adobe/gradient-background.webp'
+import logo from '../assets/adobe/logo.svg'
+---
+
+<Metadata title='Adobe' className='text-gray-800'>
+  <header class='sticky top-0 z-10 border border-gray-200 bg-white font-light'>
+    <nav class='flex h-16 items-center text-sm'>
+      <a href='/adobe' class='flex items-center gap-2 px-2 text-lg font-bold text-red-500'>
+        <Image src={logo} alt='' height={25} />
+        Adobe
+      </a>
+      <div class='hidden h-full'>
+        <button class='px-3 hover:bg-gray-100/50'>Crativity &amp; Design</button>
+        <button class='px-3 hover:bg-gray-100/50'>PDF &amp; E-signatures</button>
+        <button class='px-3 hover:bg-gray-100/50'>Marketing &amp; Commerce</button>
+        <button class='px-3 hover:bg-gray-100/50'>Help &amp; Support</button>
+      </div>
+      <a href='/adobe' class='ml-auto px-2 hover:text-blue-500'>Sign in</a>
+    </nav>
+  </header>
+  <main class='text-lg'>
+    <div class='relative'>
+      <Image src={backgroundImage} alt='' class='absolute h-full w-full object-cover' />
+      <div class='container relative mx-auto flex flex-col gap-6 px-8 py-14'>
+        <h1 class='text-4xl font-bold'>Do it all with Adobe Creative Cloud.</h1>
+        <p>
+          Make anything you can imagine, from gorgeous images, graphics, and art to standout social
+          posts, videos, PDFs, and more. Get 20+ apps in the All Apps plan plus generative AI tools
+          powered by Adobe Firefly.
+        </p>
+        <div class='flex flex-col gap-6 text-center'>
+          <a
+            href='/adobe'
+            class='rounded-full bg-blue-500 px-6 py-3 font-bold text-white hover:bg-blue-600'>
+            Free trial
+          </a>
+          <a href='/adobe' class='underline'>See all plans</a>
+        </div>
+      </div>
+      <div class='relative grid grid-cols-1 gap-8 p-8'>
+        <div class='col-span-1'>
+          <div
+            class='w-full rounded-2xl border-2 border-white bg-gradient-to-br from-white/60 to-transparent p-6 pt-8'>
+            <!-- <img src="" alt=""> -->
+            <div class='flex flex-col items-start gap-2'>
+              <h2 class='text-xl font-bold'>Adobe Photoshop, powered by Firefly.</h2>
+              <p>
+                Now with Generative Fill and Generative Expand, you can add, remove, or extend
+                content in any image automagically.
+              </p>
+              <a
+                href='/adobe'
+                class='rounded-full border-2 border-black px-4 py-2 font-bold hover:bg-black hover:text-white'>
+                Star free trial
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class='col-span-1'>
+          <div
+            class='w-full rounded-2xl border-2 border-white bg-gradient-to-br from-white/60 to-transparent p-6 pt-8'>
+            <!-- <img src="" alt=""> -->
+            <div class='flex flex-col items-start gap-2'>
+              <h2 class='text-xl font-bold'>Adobe Express, powered by Firefly.</h2>
+              <p>
+                Get started with the all-in-one, content creation app and new generative AI features
+                like Generative Fill, Text to Image, and Text to Template.
+              </p>
+              <a
+                href='/adobe'
+                class='rounded-full border-2 border-gray-800 px-4 py-2 font-bold hover:bg-gray-800 hover:text-white'>
+                Get Adobe Express free
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='flex flex-col gap-8 p-8'>
+      <div class='min-h-96 w-full rounded-2xl bg-orange-500 p-6 pt-8'>
+        <div class='flex flex-col items-start gap-2'>
+          <h2 class='text-2xl font-bold'>Adobe Illustrator, powered by Firefly.</h2>
+          <p>Transform text prompts into editable vector graphics with Text to Vector Graphic.</p>
+          <a href='/adobe' class='text-sm font-bold hover:underline'>Learn more</a>
+        </div>
+      </div>
+      <div class='min-h-96 w-full rounded-2xl bg-red-600 p-6 pt-8 text-white'>
+        <div class='flex flex-col items-start gap-2'>
+          <h2 class='text-2xl font-bold'>Get it done with Acrobat.</h2>
+          <p>Edit, share, and e-sign PDFs — all in one place. Acrobat’s got it.</p>
+          <a href='/adobe' class='text-sm font-bold hover:underline'>Learn more</a>
+        </div>
+      </div>
+      <div class='min-h-96 w-full overflow-hidden rounded-2xl'>
+        <div class='bg-gradient-to-br from-red-600 via-fuchsia-700 to-violet-800 p-8'>
+          <h2>Creative Cloud</h2>
+          <ul>
+            <li>Creative Cloud All Apps free trial</li>
+            <li>Creative Cloud for business</li>
+            <li>Student pricing &mdash; save over 60%</li>
+          </ul>
+        </div>
+        <div class='bg-gray-200 p-8'>
+          <div>
+            <h2>Acrobat</h2>
+            <ul>
+              <li>Acrobat free trial</li>
+              <li>Online PDF tools</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Explore</h2>
+            <ul>
+              <li>View all products</li>
+              <li>See all plans and pricing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class='flex flex-col items-start gap-2'>
+        <h2 class='text-2xl font-bold'>Get it done with Acrobat.</h2>
+        <p>Edit, share, and e-sign PDFs — all in one place. Acrobat’s got it.</p>
+        <a href='/adobe' class='text-sm font-bold hover:underline'>Learn more</a>
+      </div>
+      <div class='rounded-2xlp-6 min-h-96 w-full pt-8'>
+        <div class='flex flex-col items-start gap-2'>
+          <h2 class='text-2xl font-bold'>Get it done with Acrobat.</h2>
+          <p>Edit, share, and e-sign PDFs — all in one place. Acrobat’s got it.</p>
+          <a href='/adobe' class='text-sm font-bold hover:underline'>Learn more</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>Footer</footer>
+</Metadata>
